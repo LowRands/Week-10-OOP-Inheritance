@@ -13,14 +13,15 @@ public class Main {
         part2Customer.setCustomerNumber(1002);
         part2Customer.setMailingList(false);*/
         //System.out.println(part2Customer.toString());
-        PreferredCustomer part3Customer = new PreferredCustomer("LowRands","Florida","0867654321",1003,false,5,0.05);
+        PreferredCustomer part3Customer = new PreferredCustomer("LowRands","Florida","0867654321",1003,false,0,0);
         /*part3Customer.setName("LowRands");
         part3Customer.setAddress("Florida");
         part3Customer.setPhoneNumber("0867654321");
         part3Customer.setCustomerNumber(1003);
         part3Customer.setMailingList(false);
-        part3Customer.setLoyaltyPoints(5);
-        part3Customer.setDiscountLevel(0.05);*/
+        part3Customer.setLoyaltyPoints(1000);*/
+        //part3Customer.addLoyaltyPoints(1);
+        //part3Customer.setDiscountLevel(1);
         System.out.println(part3Customer.toString());
     }
 }
