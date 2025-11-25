@@ -38,9 +38,9 @@ public class PreferredCustomer extends Customer {
         return discountLevel;
     }
 
-    /*public void setDiscountLevel(double discountLevel) {
+    public void setDiscountLevel(double discountLevel) {
         this.discountLevel = discountLevel;
-    }*/
+    }
 
     @Override
     public String toString() {
