@@ -18,21 +18,12 @@ public void addLoyaltyPoints(int Points) {
         this.discountLevel = discountLevel;
     }
     private void updateDiscountLevel() {// set discountLevel based on loyaltyPoints
-    if (loyaltyPoints < 500) {
-        discountLevel = 0;
-    }
-    else if (loyaltyPoints >= 500 && loyaltyPoints <= 999) {
-        discountLevel = 0.05;
-    }
-    else if (loyaltyPoints >= 1000 && loyaltyPoints <= 1499) {
-        discountLevel = 0.06;
-    }
-    else if (loyaltyPoints >= 1500 && loyaltyPoints <= 1999) {
-        discountLevel = 0.07;
-    }
-    else if (loyaltyPoints >= 2000) {
-        discountLevel = 0.1;
-    }
+
+        if (loyaltyPoints < 500) discountLevel = 0;
+        if (loyaltyPoints >= 500 && loyaltyPoints <= 999) discountLevel = 0.05;
+     if (loyaltyPoints >= 1000 && loyaltyPoints <= 1499) discountLevel = 0.06;
+     if (loyaltyPoints >= 1500 && loyaltyPoints <= 1999) discountLevel = 0.07;
+     if (loyaltyPoints >= 2000) discountLevel = 0.1;
     }
 
     public int getLoyaltyPoints() {
