@@ -1,4 +1,4 @@
-package ie.atu.week10;
+package ie.atu.Week10;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +22,18 @@ public class Main {
         part3Customer.setLoyaltyPoints(1000);*/
         //part3Customer.addLoyaltyPoints(1);
         //part3Customer.setDiscountLevel(1);
-        System.out.println(part3Customer.toString());
+        Customer customer = new Customer("Alice Smith","1 High Street", "0851234567", 1001, true);
+        System.out.println(customer);
+        System.out.println(part3Customer);
+        PreferredCustomer pc = new PreferredCustomer();
+        pc.setName("Charlie Customer");
+        pc.setAddress("3 Middle Road");
+        pc.setPhoneNumber("0871112222");
+        pc.setCustomerNumber(2001);
+        pc.setMailingList(true);
+        pc.addLoyaltyPoints(700);
+        System.out.println(pc);
+        pc.addLoyaltyPoints(800);
+        System.out.println(pc);
     }
 }
