@@ -1,4 +1,4 @@
-package ie.atu.week10;
+package ie.atu.Week10;
 
 public class Customer extends Person
 {
