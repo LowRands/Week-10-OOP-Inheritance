@@ -1,20 +1,20 @@
 package ie.atu.Week10;
 
-public class Customer extends Person
+public class Customer extends Person // Customer class extends Person and adds customer-specific fields
 {
  private int customerNumber;
  private boolean mailingList;
 
     public Customer() {
-        super();
-        this.customerNumber = 0;
-        this.mailingList = false;
+        super(); // Calls the default constructor of Person
+        this.customerNumber = 0; // assigns default value to customer number as 0
+        this.mailingList = false; // assigns default value to mailing list as false
     }
-
-    public Customer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) {
+    // Parameterized constructor
+    public Customer(String name, String address, String phoneNumber, int customerNumber, boolean mailingList) { // Passes values to Person constructor
         super(name, address, phoneNumber);
-        this.customerNumber = customerNumber;
-        this.mailingList = mailingList;
+        this.customerNumber = customerNumber; // Sets customer number
+        this.mailingList = mailingList; // Sets mailing list status
     }
 
     public int getCustomerNumber() {
